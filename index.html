@@ -151,37 +151,43 @@
 		<div class="section-title">
 			<h2 class="title">Abstract</h2>
 		</div>
-		<p class="text"><font size="4">People are used to getting information from the media including newspapers and websites. However, readers might be misguided because different outlets possess dissimilar biases. Previous research may focus on media bias itself, however, we can also utilize the quotations to reveal such bias, which probably reflects hidden inequality and trends in the world. The Quotebank dataset provides us with a good opportunity to implement this idea.</font></p>
+		<p class="text"><font size="4">Gender bias in the news media has received increasing attention, and the differences introduced by gender in news coverage have been examined from a variety of perspectives. However, quotation-which is widespread in all types of news coverage-has not received enough attention. Quotes are simple, direct, and accurate reflections of the speaker's point of view, and quoted information in the news allows us to explore gender bias in the news from a different perspective.</font></p>
 		<br/>
-		<p class="text"><font size="4">With sufficient quotation and speaker pairs, we hope to find the hidden media bias behind the sentences through the topics they refer to and the speakers’ attributes (e.g. nationality, gender, party, etc.). Furthermore, quotations make it plausible to explore different variables changing patterns (trends) along the time with massive and available NLP techniques. Eventually, we could unite different small blocks of analysis together and give an overview of the media bias. The user will be able to use our visualization tool to do searches about media biases.
+		<p class="text"><font size="4">This data story not only analyzes the preferences of different news media when quoting different gender speakers, but also analyzes the influence of different parties and nationalities on gender bias. In addition, we explored gender bias under different topics to better understand the reasons for the appearance of bias in quotations.
 		</font></p>
-		<div class="section-title" style="padding:30px 0px;">
+		<br/>
+		<p class="text"><font size="4">Specifically, we address the following questions:<br/>
+			1. do different news media bias the citation of gender-specific speakers?<br/>
+			2. is there a significant difference in gender bias in news coverage between different parties and countries?<br/>
+			3. are women more vocal about particular topics or people (as reflected in the number of times they are quoted)?<br/>
+			4. Has the issue of appeals been addressed or worsened, or has it remained the same over time?
+		</font></p>
+		<div style="padding:20px 0px;">
 			<h3>Dataset</h3>
-		</div>
-	</div>
-</section>
-
-<section class="testimonial-area">
-	<div class="container">
-		<div class="section-title">
-			<h2 class="title">Gender bias in quotation: men’s sound is three times greater than women</h2>
-		</div>
-		<div class="row">
-			<div class="col-lg-6 col-md-6 col-12">
-				<p class="text"><font size="4">Text description
-				</font></p>
-			</div>
-			<div class="col-lg-6 col-md-6 col-12">
-				<iframe scrolling="no" style="border:none;" seamless="seamless" src="./plotly/total_gender_percentage_figure.html" height="400" width="100%">
-				</iframe>
-			</div>
 		</div>
 	</div>
 </section>
 
 <section class="info-tab-area">
 	<div class="container">
-	<div class="tab-bg-element"><img src="img/home1/tab-bg-elements.png" alt=""></div>
+		<div class="section-title">
+			<h2 class="title">Gender bias in quotation: men’s sound is three times greater than women</h2>
+		</div>
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-12">
+				<p class="text"><font size="4">
+					We display the overall gender percentages from January 1, 2015, to April 30, 2020, considering the relatively small number of sexual minority, we group them to others. At the first glance, we can observe that about 80% of speakers who quoted by outlets are men, which is consistent with other related work on gender bias. [1], [2] [3]. Considering that we are living in the world with about 50% women, this should not be the case. The underrepresentation of women in society in general and in news articles reflect that we are far from gender equality.					
+				</font></p>
+			</div>
+			<div class="col-lg-6 col-md-6 col-12">
+				<iframe scrolling="no" style="border:none;" seamless="seamless" src="./plotly/total_gender_percentage_figure.html" height="300" width="100%">
+				</iframe>
+			</div>
+		</div>
+		<p class="text"><font size="4">To be more concrete, we display Annual Top 10 quoted speakers from 2015 to 2019, as we can see, men are dominated the quotation in news: Men accounted for the majority of quotes in the top 10. 
+		</font></p>
+		<br/>
+	<div class="tab-bg-element"></div>
 		<div class="info-tab">
 			<ul class="nav nav-tabs" id="myTab" role="tablist">
 				<li class="nav-item">
@@ -929,15 +935,15 @@
 		<div class="section-title">
 			<h2 class="title">Track the gender bias lies in outlets, nationalities, and partisanship</h2>
 		</div>
-		<iframe scrolling="no" style="border:none;" seamless="seamless" src="./plotly/bar.html" height="400" width="100%">
-		</iframe>
-		<p class="text"><font size="4">Text description
+		<p class="text"><font size="4">In general, journalists tend to have discretion in deciding which people to bring in to provide background or analysis when doing reports, which is the most direct reason to cause the gender bias in quotations. Therefore, to do a more granular analysis of gender bias in news quotations, we chose seven of the most influential world news outlets to track their gender preferences and evolving trends in quotes. 
 		</font></p>
-		<iframe scrolling="no" style="border:none;" seamless="seamless" src="./plotly/line.html" height="400" width="100%">
-		</iframe>
-		<p class="text"><font size="4">Text description
+		<br/>
+		<p class="text"><font size="4">In addition, we analyzed, in the same way, whether the nationality and party affiliation of the speaker introduces a gender bias in the citation. In other words, whether being in a different country or party affects the probability of women speaking out.
 		</font></p>
-		<iframe scrolling="no" style="border:none;" seamless="seamless" src="./plotly/pie.html" height="400" width="100%">
+		<br/>
+		<p class="text"><font size="4">Provide some evidence to explain the results:
+		</font></p>
+		<iframe scrolling="no" style="border:none;" seamless="seamless" src="https://d3c-dash.herokuapp.com " height="1200" width="100%">
 		</iframe>
 	</div>
 </section>
@@ -947,23 +953,25 @@
 		<div class="section-title">
 			<h2 class="title">Analyze the gender bias with different topics</h2>
 		</div>
-		<div class="section-title" style="padding:30px 0px;">
+		<p class="text"><font size="4">Obviously, the words of different genders may have different exposure under different news topics, so analyzing the gender ratio of quoted speakers under different topics helps us to conduct a more fine-grained analysis. We manually selected 9 common topics in the news and defined keywords for each of these 9 topics in order to extract references to the corresponding topics from the data. In addition, we analyzed the sentiment of the sentences to study the difference in sentiment between men and women on specific topics.
+		</font></p>
+		<div style="padding:20px 0px;">
 			<h3>Monthly gender percentage of different topics</h3>
 		</div>
+		<p class="text"><font size="4">We first draw the evolution of women speakers’ percentage per month for each topic,  these topics cover a wide range of areas typically seen in the news, as shown in the vertical axis of figure. As we can see, 
+		</font></p>
 		<iframe scrolling="no" style="border:none;" seamless="seamless" src="./plotly/heatmap.html" height="400" width="100%">
 		</iframe>
-		<p class="text"><font size="4">Text description
-		</font></p>
 
-		<div class="section-title" style="padding:30px 0px;">
+		<div style="padding:20px 0px;">
 			<h3>Sentiment Analysis for specific Topics</h3>
 		</div>
+		<p class="text"><font size="4">Text description
+		</font></p>
 		<iframe scrolling="no" style="border:none;" seamless="seamless" src="./plotly/stack_bar.html" height="400" width="100%">
 		</iframe>
 		<iframe scrolling="no" style="border:none;" seamless="seamless" src="./plotly/Stack_bar_1.html" height="600" width="100%">
 		</iframe>
-		<p class="text"><font size="4">Text description
-		</font></p>
 	</div>
 </section>
 
@@ -972,14 +980,12 @@
 		<div class="section-title">
 			<h2 class="title">Detecting the linguistic differences between men and women in quotation</h2>
 		</div>
+		<p class="text"><font size="4">To better understand the differences in word usage between men and women in the news, we randomly selected 1 million citations for each gender sequentially from 2015 to 2020, thus constituting a balanced training data of 12 million citations. After that, we use the bag-of-words model as well as TF-IDF to convert the quotation into vectors and select the top 2,000 high-frequency words as features to predict the speaker's gender. The prediction model chosen is a logistic regression model.
+		</font></p>
 		<iframe scrolling="no" style="border:none;" seamless="seamless" src="./plotly/wordcloud_men.html" height="400" width="100%">
 		</iframe>
-		<p class="text"><font size="4">Text description
-		</font></p>
 		<iframe scrolling="no" style="border:none;" seamless="seamless" src="./plotly/wordcloud_women3.html" height="400" width="100%">
 		</iframe>
-		<p class="text"><font size="4">Text description
-		</font></p>
 	</div>
 </section>
 
