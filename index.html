@@ -941,12 +941,17 @@
 </body>
 
 <script type="text/javascript"> 
+var show = false;
 window.onscroll = function () {
-	var bodyScrollHeight =  document.documentElement.scrollTop;// body滚动高度
+	//var bodyScrollHeight =  document.documentElement.scrollTop;// body滚动高度
 	var windowHeight = window.innerHeight;// 视窗高度
 	var numbers = document.getElementsByClassName('text-number');
-	var numberHeight = numbers[1].offsetTop;// text距离顶部高度 
-	if (numberHeight  < windowHeight  + bodyScrollHeight - 340) {
+	var numberHeight = numbers[1].getBoundingClientRect().top;// text距离顶部高度 
+	console.log(numberHeight)
+	console.log(windowHeight)
+	console.log("sub:",numberHeight-windowHeight-100)
+	if (numberHeight  < windowHeight + 100 && show == false) {
+		console.log(numberHeight,windowHeight)
 		$("#number-example-1").numberRun({
 			attr: true
 		});
@@ -965,6 +970,7 @@ window.onscroll = function () {
 		$("#number-example-6").numberRun({
 			attr: true
 		});
+		show = true;
 	}
   }
 </script> 
