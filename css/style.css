@@ -198,7 +198,7 @@ Table Of Contents
 --------------------------
 */
 body {
-  font-family: "HK Grotesk Legacy";
+  font-family: "lora";
 }
 
 h1,
@@ -259,7 +259,7 @@ h6 {
 }
 
 p {
-  font-family: "HK Grotesk Legacy";
+  font-family: "lora";
   color: #ffffff;
   font-size: 16px;
   font-weight: normal;
@@ -273,7 +273,7 @@ p img {
 }
 
 span {
-  font-family: "HK Grotesk Legacy";
+  font-family: "lora";
 }
 
 /* em and strong */
@@ -294,7 +294,7 @@ small {
 /*  blockquotes */
 blockquote {
   border-left: 0 none;
-  font-family: "HK Grotesk Legacy";
+  font-family: "lora";
   margin: 10px 0;
   padding-left: 40px;
   position: relative;
@@ -355,7 +355,7 @@ abbr:hover {
 a,
 a:visited {
   text-decoration: none;
-  font-family: "HK Grotesk Legacy";
+  font-family: "lora";
   font-weight: normal;
   font-size: 12px;
   color: #ffffff;
@@ -717,7 +717,7 @@ header {
 }
 
 .hero-content .intro {
-  font-family: "HK Grotesk Legacy";
+  font-family: "lora";
   color: #FFC576;
   font-size: 40px;
   line-height: 42px;
@@ -731,7 +731,7 @@ header {
 }
 
 .hero-content .desg {
-  font-family: "HK Grotesk Legacy";
+  font-family: "lora";
   font-size: 30px;
   line-height: 32px;
   font-weight: 500;
@@ -1658,7 +1658,7 @@ footer {
 }
 
 .current-opinion article .comment-details .comment-meta .comment-left-meta .author-name {
-  font-family: "HK Grotesk Legacy";
+  font-family: "lora";
   font-size: 18px;
   line-height: 22px;
   font-weight: 600;
