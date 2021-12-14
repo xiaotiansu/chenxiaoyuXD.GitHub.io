@@ -28,6 +28,9 @@
 	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
+<style type="text/css">
+	h3.counter { text-align:center; color: #FFC576; margin: 0 0 10px }
+</style>
 </head>
 
 <body>
@@ -80,32 +83,32 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-4 col-md-6 col-12">
-				<h3 id="number-example-1" class="text-number" number="288772111" speed="20" style="text-align:center; color: #FFC576; margin: 0 0 10px">288772111</h3>
-				<h5 style="text-align:center; margin: 0 0 20px">occurrence of quotation.
-				</h5>
-			</div>
-			<div class="col-lg-4 col-md-6 col-12">
-				<h3 id="number-example-2" class="text-number" number="2301973" speed="15" style="text-align:center; color: #FFC576; margin: 0 0 10px">2301973</h3>
+				<h3 class="counter">2,301,973</h3>
 				<h5 style="text-align:center; margin: 0 0 20px">different speakers.
 				</h5>
 			</div>
 			<div class="col-lg-4 col-md-6 col-12">
-				<h3 id="number-example-3" class="text-number" number="74377416" speed="20" style="text-align:center; color: #FFC576; margin: 0 0 10px">74377416</h3>
+				<h3 class="counter">74,377,416</h3>
 				<h5 style="text-align:center; margin: 0 0 20px">different quotation.
 				</h5>
 			</div>
 			<div class="col-lg-4 col-md-6 col-12">
-				<h3 id="number-example-4" class="text-number" number="3064" speed=15" style="text-align:center; color: #FFC576; margin: 0 0 10px">3064</h3>
-				<h5 style="text-align:center; margin: 0 0 20px">different speakers' party affiliations
+				<h3 class="counter">288,772,111</h3>
+				<h5 style="text-align:center; margin: 0 0 20px">occurrence of quotation.
 				</h5>
 			</div>
 			<div class="col-lg-4 col-md-6 col-12">
-				<h3 id="number-example-5" class="text-number" number="12715" speed="20" style="text-align:center; color: #FFC576; margin: 0 0 10px">12715</h3>
+				<h3 class="counter">12,715</h3>
 				<h5 style="text-align:center; margin: 0 0 20px">different news domains
 				</h5>
 			</div>
 			<div class="col-lg-4 col-md-6 col-12">
-				<h3 id="number-example-6" class="text-number" number="579" speed="15" style="text-align:center; color: #FFC576; margin: 0 0 10px">579</h3>
+				<h3 class="counter">3,064</h3>
+				<h5 style="text-align:center; margin: 0 0 20px">different speakers' party affiliations
+				</h5>
+			</div>
+			<div class="col-lg-4 col-md-6 col-12">
+				<h3 class="counter">579</h3>
 				<h5 style="text-align:center; margin: 0 0 20px">different speakers' nationalities
 			</h5>
 			</div>
@@ -1050,8 +1053,15 @@
 <script src="js/theme.js"></script>
 <script src="js/jquery.number-run.js"></script>
 <script src="js/jquery.number-run.min.js"></script>
+<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+<script type="text/javascript">
+	$('.counter').countUp();
+</script>
 </body>
 
+<!--
 <script type="text/javascript"> 
 var show = false;
 window.onscroll = function () {
@@ -1086,5 +1096,6 @@ window.onscroll = function () {
 	}
   }
 </script> 
+-->
 </html>
 
