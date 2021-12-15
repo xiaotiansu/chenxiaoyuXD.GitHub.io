@@ -42,10 +42,10 @@
 	<div class="hero-banner"><img src="img/home1/dlab.png" alt=""></div>
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-5 col-12">
+			<div class="col-lg-7 col-12">
 				<div class="hero-content">
-					<h2 class="title">Revealing implicit media biases</h2>
-					<h3 class="intro">with news quotations</h3>
+					<h2 class="title">Exploring explicit and implicit gender bias</h2>
+					<h3 class="intro">from news quotations</h3>
 					<!--
 					<h3 class="desg">Product Designer</h3>
 					-->
@@ -69,7 +69,7 @@
 <section class="testimonial-area">
 	<div class="container">
 		<div class="section-title">
-			<h2 class="title">Abstract</h2>
+			<h2 class="title">What can we do from quotations?</h2>
 		</div>
 		<p class="text"><font size="4">Gender bias in the news media has received increasing attention, and the differences introduced by gender in news coverage have been examined from a variety of perspectives. However, quotation-which is widespread in all types of news coverage-has not received enough attention. Quotes are simple, direct, and accurate reflections of the speaker's point of view, and quoted information in the news allows us to explore gender bias in the news from a different perspective.</font></p>
 		<br/>
@@ -78,7 +78,7 @@
 		<br/>
 		<p class="text"><font size="4">Do man speakers speak truly more “louder” than females? If it is true, caused by news coverage or just the gender itself? Furthermore, as time goes by, has this issue been worsened or mitigated, or just remained the same level? Let us find it out!
 		</font></p>
-		<div style="padding:20px 0px;">
+		<div style="padding:30px 0px;">
 			<h3>Dataset</h3>
 		</div>
 		<div class="row">
@@ -991,8 +991,48 @@
 		<br/>
 		<p class="text"><font size="4">Provide some evidence to explain the results:
 		</font></p>
-		<iframe scrolling="no" style="border:none;" seamless="seamless" src="https://group-dash-app.herokuapp.com/" height="1050" width="100%">
-		</iframe>
+
+		<div class="info-tab">
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" id="media-tab" data-toggle="tab" href="#media" role="tab" aria-controls="media" aria-selected="true">Media Source</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="nation-tab" data-toggle="tab" href="#nation" role="tab" aria-controls="nation" aria-selected="false">Speaker's Nationality</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="party-tab" data-toggle="tab" href="#party" role="tab" aria-controls="party" aria-selected="false">Speaker's Political party</a>
+				</li>
+			</ul>
+			<div class="tab-content" id="myTabContent">
+				<div class="tab-pane fade show active" id="media" role="tabpanel" aria-labelledby="media-tab">
+					<iframe scrolling="no" style="border:none;" seamless="seamless" src="https://group-dash-app.herokuapp.com/" height="1050" width="100%">
+					</iframe>
+					<p class="text"><font size="4">First, for news outlets over these 5 years, it is easy to see that in FoxNews the number of male speakers exceeds that of other media by a large amount, and it also achieves a staggering amount–over 14 million! If we focus on the male-female ratio, CNBC performs the “best score”–85.72% for men(but it is not a good thing). The bias could be much worse in 2020 when males take up 89.6%. 
+					<br/><br/>
+					At a macro level, female speakers are always in the disadvantaged position(whatever the news outlet is) so that the percentage variances among news outlets are not significantly different(highly consistent trends). This inspires us that media preferences themselves may have little impact on the production of gender bias.
+					</font></p>
+				</div>
+				<div class="tab-pane fade" id="nation" role="tabpanel" aria-labelledby="nation-tab">
+					<p class="text" style="margin: 0 40px;"><font size="4">How about the cases of nationalities? It is such a pity to say that in all countries, the above phenomenon is the same. Though more females are quoted in the USA(compared to other countries), it doesn’t mean that there is less bias in America, because almost all the news outlets are from America. In terms of period, the percentage of female speakers is generally lower in France than in other countries. 
+					<br/><br/>
+					If we narrow the time period to 2016-2017, you can find that from mid-2016 to early 2017, the female percentage in Britain rose to 23.76%, where we speculate the potential reason might be Theresa May as Prime Minister of the United Kingdom. Thus, we can infer that female leaders 
+					<br/><br/>	
+					The unprecedented(even abnormal) rise in France during March 2016 is an error due to the small amount of data
+					</font></p>
+					<iframe scrolling="no" style="border:none;" seamless="seamless" src="https://group-dash-app.herokuapp.com/" height="1050" width="100%">
+					</iframe>
+				</div>
+				<div class="tab-pane fade" id="party" role="tabpanel" aria-labelledby="party-tab">
+					<p class="text"><font size="4">The case is kind of different compared to news outlets and nationalities. There is also an obvious bias in the Republican Party(88.35% is male) but in the Democratic Party, female speakers occupy 34.03%. This observation might be explained by the aims of the Democratic Party. 
+					<br/><br/>
+					From its official website: “We are committed to ensuring full equality for women. Democrats will fight to end gender discrimination in the areas of education, employment, health care, or any other sphere. We will combat biases across economic, political, and social life that hold women back and limit their opportunities.” We know that they tend to defend the interests of minorities(e.g. female, racial minorities…), which implies that it might encourage females to speak out.Thus, from our statistical result from quotations, there are famous female speakers in the Democratic Party including Nancy Pelosi, Elizabeth Warren, Alexandria Ocasio-Cortez and Kamala Harris. 
+					</font></p>
+					<iframe scrolling="no" style="border:none;" seamless="seamless" src="https://group-dash-app.herokuapp.com/" height="1050" width="100%">
+					</iframe>
+				</div>
+			</div>
+		</div>
 	</div>
 </section>
 
@@ -1003,7 +1043,7 @@
 		</div>
 		<p class="text"><font size="4">Obviously, the words of different genders may have different exposure under different news topics, so analyzing the gender ratio of quoted speakers under different topics helps us to conduct a more fine-grained analysis. We manually selected 9 common topics in the news and defined keywords for each of these 9 topics in order to extract references to the corresponding topics from the data. In addition, we analyzed the sentiment of the sentences to study the difference in sentiment between men and women on specific topics.
 		</font></p>
-		<div style="padding:20px 0px;">
+		<div style="padding:30px 0px;">
 			<h3>Monthly gender percentage of different topics</h3>
 		</div>
 		<p class="text"><font size="4">We first draw the evolution of women speakers’ percentage per month for each topic,  these topics cover a wide range of areas typically seen in the news, as shown in the vertical axis of figure. As we can see, 
@@ -1011,7 +1051,7 @@
 		<iframe scrolling="no" style="border:none;" seamless="seamless" src="./plotly/heatmap.html" height="400" width="100%">
 		</iframe>
 
-		<div style="padding:20px 0px;">
+		<div style="padding:30px 0px;">
 			<h3>Sentiment Analysis for specific Topics</h3>
 		</div>
 		<p class="text"><font size="4">Text description
@@ -1026,7 +1066,26 @@
 		<div class="section-title">
 			<h2 class="title">Detecting the linguistic differences between men and women in quotation</h2>
 		</div>
-		<p class="text"><font size="4">To better understand the differences in word usage between men and women in the news, we randomly selected 1 million citations for each gender sequentially from 2015 to 2020, thus constituting a balanced training data of 12 million citations. After that, we use the bag-of-words model as well as TF-IDF to convert the quotation into vectors and select the top 2,000 high-frequency words as features to predict the speaker's gender. The prediction model chosen is a logistic regression model.
+		<p class="text"><font size="4">We have already known that males and females tend to show different preferences towards various topics(from heatmap and sentiment analysis). Now, we wonder: can we predict the gender(i.e. male or female) when we know the quotations? 
+		<br/><br/>
+		If we cannot infer it just from what they say(worse than random prediction), it means that the quotation style discrepancy between males and females is not obvious as we expected.
+		</font></p>
+
+		<div style="padding:30px 0px;">
+			<h3>How do we design such a machine learning model?
+			</h3>
+		</div>
+		<p class="text"><font size="4">The prediction model chosen is a logistic regression model, for it is actually a binary-classification task. We randomly select 1 million citations for each gender sequentially from 2015 to 2020, constituting a balanced training data of 12 million citations. After that, we use the bag-of-words model as well as TF-IDF to convert the quotation into vectors and select the top 2,000 most frequent words as features to predict the speaker's gender. 
+		<br/><br/>
+		If there were no significant differences in language between men and women, then the model would perform as equivalent to a random guess, i.e., 50%. However, if the model performs better than 50%(in our task R-Square is 59.65%), it indicates that there is indeed some bias in quotations spoken by different genders, which is thus identified by the model as a discriminative feature.
+		</font></p>
+		<div style="padding:30px 0px;">
+			<h3>How can we infer the gender bias from the weights in the model?
+			</h3>
+		</div>
+		<p class="text"><font size="4">In this binary-classification task, we label female as 0, male as 1. Therefore, the larger the parameters are, the more male-oriented the corresponding word is. Conversely, the smaller the parameters are, the corresponding words are more “female”. As a result, this logistic regression model provides us with a way to probe those predictive words.
+		<br/><br/>
+		The figure below shows the top 50 most predictive words for males and females, where we can see that the representative words for male quotes are dominated by sports-related words. This further reflects the strong position of males under sports-related topics. For women, it is more about their own characteristics and some life-like words, which is also consistent with our previous analysis. 
 		</font></p>
 		<iframe scrolling="no" style="border:none;" seamless="seamless" src="./plotly/wordcloud_men.html" height="400" width="100%">
 		</iframe>
@@ -1035,6 +1094,14 @@
 	</div>
 </section>
 
+<section class="testimonial-area">
+	<div class="container">
+		<div class="section-title">
+			<h2 class="title"> Our finding: Gender bias indeed exists! There is a long way to go towards gender equality!
+			</h2>
+		</div>
+	</div>
+</section>
 
 <!-- Scripts -->
 <script src="js/jquery-3.3.1.min.js"></script>
