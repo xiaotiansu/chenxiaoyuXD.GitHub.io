@@ -39,6 +39,8 @@
 /*----------------------------------------*/
 /*google-font*/
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700");
+@import url("https://fonts.googleapis.com/css?family=Martel+Sans");
+
 /*----------------------------------------*/
 /*  Other Files
 /*----------------------------------------*/
@@ -163,7 +165,7 @@ html {
 }
 
 body {
-  background: #1F2235;
+  background: #23273C;
   font-weight: normal;
   font-size: 15px;
   letter-spacing: 1.5px;
@@ -198,7 +200,7 @@ Table Of Contents
 --------------------------
 */
 body {
-  font-family: "lora";
+  font-family: "Martel Sans";
 }
 
 h1,
@@ -259,13 +261,13 @@ h6 {
 }
 
 p {
-  font-family: "lora";
+  font-family: "Martel Sans";
   color: #ffffff;
   font-size: 16px;
   font-weight: normal;
   letter-spacing: 0;
   line-height: 26px;
-  margin: 0;
+  margin-bottom: 20px;
 }
 
 p img {
@@ -273,7 +275,7 @@ p img {
 }
 
 span {
-  font-family: "lora";
+  font-family: "Martel Sans";
 }
 
 /* em and strong */
@@ -294,7 +296,7 @@ small {
 /*  blockquotes */
 blockquote {
   border-left: 0 none;
-  font-family: "lora";
+  font-family: "Martel Sans";
   margin: 10px 0;
   padding-left: 40px;
   position: relative;
@@ -355,7 +357,7 @@ abbr:hover {
 a,
 a:visited {
   text-decoration: none;
-  font-family: "lora";
+  font-family: "Martel Sans";
   font-weight: normal;
   font-size: 12px;
   color: #ffffff;
@@ -461,6 +463,9 @@ dd {
 --------------------------
 */
 /* Your Custom Typography. */
+.card{
+  background: #11ABB0;
+}
 .bg-with-black {
   position: relative;
 }
@@ -717,7 +722,7 @@ header {
 }
 
 .hero-content .intro {
-  font-family: "lora";
+  font-family: "Martel Sans";
   color: #FFC576;
   font-size: 40px;
   line-height: 42px;
@@ -731,7 +736,7 @@ header {
 }
 
 .hero-content .desg {
-  font-family: "lora";
+  font-family: "Martel Sans";
   font-size: 30px;
   line-height: 32px;
   font-weight: 500;
@@ -761,7 +766,7 @@ header {
 }
 
 .info-tab .nav {
-  background: #1F2235;
+  background: #23273C;
   border: 0;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
@@ -789,7 +794,7 @@ header {
 }
 
 .info-tab .nav .nav-item .nav-link.active {
-  color: #1F2235;
+  color: #23273C;
   background: #FFC576;
 }
 
@@ -1093,7 +1098,7 @@ header {
   content: "\f10e";
   font-family: "Font Awesome 5 Pro";
   font-weight: 900;
-  color: #1F2235;
+  color: #23273C;
   font-size: 40px;
   line-height: 42px;
   position: absolute;
@@ -1274,7 +1279,7 @@ header {
   right: 18px;
   top: 26px;
   font-size: 44px;
-  color: #1F2235;
+  color: #23273C;
 }
 
 .single-social .icon img {
@@ -1286,11 +1291,11 @@ header {
 }
 
 .single-social:hover .title {
-  color: #1F2235;
+  color: #23273C;
 }
 
 .single-social:hover .info {
-  color: #1F2235;
+  color: #23273C;
 }
 
 .single-social:hover .icon {
@@ -1372,7 +1377,7 @@ footer {
   border-radius: 100px;
   background: #FFC576;
   bottom: 30px;
-  color: #1F2235;
+  color: #23273C;
   font-size: 20px;
   height: 50px;
   line-height: 50px;
@@ -1658,7 +1663,7 @@ footer {
 }
 
 .current-opinion article .comment-details .comment-meta .comment-left-meta .author-name {
-  font-family: "lora";
+  font-family: "Martel Sans";
   font-size: 18px;
   line-height: 22px;
   font-weight: 600;
@@ -1724,13 +1729,13 @@ footer {
 .post-pagination ul li a:hover {
   background: #FFC576;
   border-color: #FFC576;
-  color: #1F2235;
+  color: #23273C;
 }
 
 .post-pagination ul li.active a {
   background: #FFC576;
   border-color: #FFC576;
-  color: #1F2235;
+  color: #23273C;
 }
 
 .post-pagination ul li.disable a {
@@ -1765,11 +1770,11 @@ footer {
       -ms-flex: 1 1 0px;
           flex: 1 1 0;
   min-width: 186px;
-  border-right: 1px solid #1F2235;
+  border-right: 1px solid #23273C;
 }
 
 .innerpage-hero-area .iha-menu .iha-menu-item li:first-child {
-  border-left: 1px solid #1F2235;
+  border-left: 1px solid #23273C;
 }
 
 .innerpage-hero-area .iha-menu .iha-menu-item li a {
@@ -1784,11 +1789,11 @@ footer {
 
 .innerpage-hero-area .iha-menu .iha-menu-item li.active a {
   background: #FFC576;
-  color: #1F2235;
+  color: #23273C;
 }
 
 .innerpage-hero-area .iha-menu .iha-menu-item li.active a:hover {
-  color: #1F2235;
+  color: #23273C;
 }
 
 .page-blog-area {
@@ -2048,7 +2053,7 @@ footer {
 .single-pricing .badge {
   position: absolute;
   background: #FFC576;
-  color: #1F2235;
+  color: #23273C;
   border-radius: 25px;
   font-size: 9px;
   font-weight: 600;
@@ -2472,7 +2477,7 @@ footer {
 }
 
 .h4eqa-experience-box .left {
-  background: #1F2235;
+  background: #23273C;
   float: left;
   text-align: center;
   width: 70px;
@@ -2527,7 +2532,7 @@ footer {
 }
 
 .h4eqa-experience-box:hover .left .icon {
-  color: #1F2235;
+  color: #23273C;
 }
 
 .h2eea-education {
