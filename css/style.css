@@ -40,6 +40,7 @@
 /*google-font*/
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700");
 @import url("https://fonts.googleapis.com/css?family=Martel+Sans");
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 
 /*----------------------------------------*/
 /*  Other Files
@@ -261,13 +262,14 @@ h6 {
 }
 
 p {
-  font-family: "Martel Sans";
+  font-family: "Nunito";
   color: #ffffff;
   font-size: 16px;
   font-weight: normal;
   letter-spacing: 0;
   line-height: 26px;
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 p img {
