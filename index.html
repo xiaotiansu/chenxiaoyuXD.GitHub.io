@@ -34,6 +34,29 @@
 </head>
 
 <body>
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-2 col-sm-4 col-5">
+				<div class="logo">
+					<a href="index.html" class="link"><img src="img/logo.png" alt=""></a>
+				</div>
+			</div>
+			<div class="col-lg-10 col-sm-4 col-7">
+				<div class="main-menu stellarnav">
+					<ul>
+						<li><a href="#ch0">Chapter 0</a></li>
+						<li><a href="#ch1">Chapter 1</a></li>
+						<li><a href="#ch2">Chapter 2</a></li>
+						<li><a href="#ch3">Chapter 3</a></li>
+						<li><a href="#ch4">Chapter 4</a></li>
+						<li><a href="#ch5">Chapter 5</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
 <section class="hero-area">
 	<div class="hero-element-1"><img src="img/home1/hero-element-1.png" alt=""></div>
 	<div class="hero-element-2"><img src="img/home1/hero-element-2.png" alt=""></div>
@@ -66,10 +89,10 @@
 	</div>
 </section>
 
-<section class="testimonial-area">
+<section class="testimonial-area" id="ch0">
 	<div class="container">
 		<div class="section-title">
-			<h2 class="title" style="text-align: center;">What can we do from quotations?</h2>
+			<h2 class="title" style="text-align: center;">0.What can we do from quotations?</h2>
 		</div>
 		<div class="row">
 			<div class="col-lg-6 col-md-6 col-12">
@@ -124,10 +147,10 @@
 	</div>
 </section>
 
-<section class="info-tab-area">
+<section class="info-tab-area" id="ch1">
 	<div class="container">
 		<div class="section-title">
-			<h2 class="title" style="text-align: center;">Gender bias in quotations: men’s voice is indeed louder than women(three times larger!)</h2>
+			<h2 class="title" style="text-align: center;">1.Gender bias in quotations: men’s voice is indeed louder than women(three times larger!)</h2>
 		</div>
 		<p class="text"><font size="4">
 			We display three types of gender percentages from January 1, 2015, to April 30, 2020, considering a relatively small number of sexual minorities, we grouped them to “others”. We decide to narrow the scope of this experiment by assessing only binary gender representations. (Occurrence means the total number of quotations that appear in the media. Speaker is the number of different speakers in the dataset. Quotation represents the number of different quotations.) At the first glance, you can easily observe that over 80% of speakers quoted by outlets are men, which is consistent with other related work on gender bias. [1], [2] [3]. You might be misled to believe that there are many more males than females on earth, however, it is totally wrong for the whole people in the world or even just for citizens in the USA(for both the gender ratio is about 1:1). Interestingly, the percentage of women speakers is about 5% higher than the other two types of aggregations, which means that though women accounted for nearly a quarter of the whole speakers, they were still less quoted by news outlets. The under-representation of women in society in general and in news articles reflect that we are far from gender equality.	
@@ -1002,10 +1025,10 @@
 
 
 
-<section class="testimonial-area">
+<section class="testimonial-area" id="ch2">
 	<div class="container">
 		<div class="section-title">
-			<h2 class="title" style="text-align: center;">Insights on gender bias in outlets, nationalities, and partisanship
+			<h2 class="title" style="text-align: center;">2.Insights on gender bias in outlets, nationalities, and partisanship
 			</h2>
 		</div>
 		<div align=center>
@@ -1062,7 +1085,7 @@
 					</font></p>
 					
 				</div>
-				<div class="tab-pane fade" id="nation" role="tabpanel" aria-labelledby="nation-tab">
+				<div class="tab-pane fade show active" id="nation" role="tabpanel" aria-labelledby="nation-tab">
 					<iframe scrolling="no" style="border:none;" seamless="seamless" src="https://nationality-dash.herokuapp.com/" height="1050" width="100%">
 					</iframe>
 					<div style="margin: 30px 40px;">
@@ -1079,7 +1102,7 @@
 					According to the Human Development Index(HDI) assessment published by the United Nations Development Programme, India's development index (0.645) is much lower than other developed countries in the data (e.g. 0.926 in the United States and 0.901 in France), yet there has been no significant progress or improvement in the percentage of women's voices. From this, we can infer that the level of development of countries doesn’t have a noticeable impact on reducing gender bias.	
 					</font></p>
 				</div>
-				<div class="tab-pane fade" id="party" role="tabpanel" aria-labelledby="party-tab">
+				<div class="tab-pane fade show active" id="party" role="tabpanel" aria-labelledby="party-tab">
 					<iframe scrolling="no" style="border:none;" seamless="seamless" src="https://party-dash.herokuapp.com/" height="1050" width="100%">
 					</iframe>
 					<div style="margin: 30px 40px;">
@@ -1106,10 +1129,10 @@
 	</div>
 </section>
 
-<section class="testimonial-area">
+<section class="testimonial-area" id="ch3">
 	<div class="container">
 		<div class="section-title">
-			<h2 class="title" style="text-align: center;">Do topics reveal potential gender bias? How? </h2>
+			<h2 class="title" style="text-align: center;">3.Do topics reveal potential gender bias? How? </h2>
 		</div>
 
 		<div align=center>
@@ -1121,8 +1144,15 @@
 			</font></p>
 		</div>
 
-		<p class="text"><font size="4">Obviously, the words used by males or females may have different exposure under various news topics, so exploring the gender ratio of quoted speakers under different topics can help us conduct a more fine-grained analysis. We manually select 9 common topics in the news and define keywords for each of these topics to extract related quotations from the data. In addition, we examine three sentiments(Positive, Negative and Neutral) of the sentences to study the distributions in sentiments between men and women on specific topics.
-		</font></p>
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-12">
+				<p class="text"><font size="4">Obviously, the words used by males or females may have different exposure under various news topics, so exploring the gender ratio of quoted speakers under different topics can help us conduct a more fine-grained analysis. We manually select 9 common topics in the news and define keywords for each of these topics to extract related quotations from the data. In addition, we examine three sentiments(Positive, Negative and Neutral) of the sentences to study the distributions in sentiments between men and women on specific topics.
+				</font></p>
+			</div>
+			<div class="col-lg-6 col-md-6 col-12">
+				<div align=center><img src="img/woman.jpg" alt=""></div>
+			</div>
+		</div>
 		<div style="padding:30px 0px;">
 			<h3>Women seem to be sensual and benevolent,  men seem to be aspiring and sports-focused</h3>
 		</div>
@@ -1153,34 +1183,33 @@
 	</div>
 </section>
 
-<section class="testimonial-area">
+<section class="testimonial-area" id="ch4">
 	<div class="container">
 		<div class="section-title">
-			<h2 class="title" style="text-align: center;">Detecting the linguistic differences between men and women in quotation</h2>
+			<h2 class="title" style="text-align: center;">4.Detecting the linguistic differences between men and women in quotation</h2>
+		</div>
+		<p class="text"><font size="4">We have already known that males and females tend to show different preferences towards various topics(from heatmap and sentiment analysis). Now, we wonder: can we predict the gender(i.e. male or female) when we know the quotations? 
+		</font></p>
+		<p class="text"><font size="4">
+		If we cannot infer it just from what they say(worse than random prediction), it means that the quotation style discrepancy between males and females is not obvious as we expected. 
+		</font></p>
+
+		<div style="padding:30px 0px;">
+			<h3>How do we design such a machine learning model?
+			</h3>
 		</div>
 		<div class="row">
 			<div class="col-lg-6 col-md-6 col-12">
 				<div><img src="img/para4.png" alt=""></div>
 			</div>
 			<div class="col-lg-6 col-12">
-				<p class="text"><font size="4">We have already known that males and females tend to show different preferences towards various topics(from heatmap and sentiment analysis). Now, we wonder: can we predict the gender(i.e. male or female) when we know the quotations? 
+				<p class="text"><font size="4">The prediction model chosen is a logistic regression model, for it is actually a binary-classification task. We randomly select 1 million citations for each gender sequentially from 2015 to 2020, constituting a balanced training data of 12 million citations. After that, we use the bag-of-words model as well as TF-IDF to convert the quotation into vectors and select the top 2,000 most frequent words as features to predict the speaker's gender. 
 				</font></p>
 				<p class="text"><font size="4">
-				If we cannot infer it just from what they say(worse than random prediction), it means that the quotation style discrepancy between males and females is not obvious as we expected. 
+				If there were no significant differences in language between men and women, then the model would perform as equivalent to a random guess, i.e., 50%. However, if the model performs better than 50%(in our task R-Square is 59.65%), it indicates that there is indeed some bias in quotations spoken by different genders, which is thus identified by the model as a discriminative feature.
 				</font></p>
 			</div>
 		</div>
-		
-
-		<div style="padding:30px 0px;">
-			<h3>How do we design such a machine learning model?
-			</h3>
-		</div>
-		<p class="text"><font size="4">The prediction model chosen is a logistic regression model, for it is actually a binary-classification task. We randomly select 1 million citations for each gender sequentially from 2015 to 2020, constituting a balanced training data of 12 million citations. After that, we use the bag-of-words model as well as TF-IDF to convert the quotation into vectors and select the top 2,000 most frequent words as features to predict the speaker's gender. 
-		</font></p>
-		<p class="text"><font size="4">
-		If there were no significant differences in language between men and women, then the model would perform as equivalent to a random guess, i.e., 50%. However, if the model performs better than 50%(in our task R-Square is 59.65%), it indicates that there is indeed some bias in quotations spoken by different genders, which is thus identified by the model as a discriminative feature.
-		</font></p>
 
 		<div style="padding:30px 0px;">
 			<h3>How can we infer the gender bias from the weights in the model?
@@ -1199,10 +1228,10 @@
 	</div>
 </section>
 
-<section class="testimonial-area">
+<section class="testimonial-area" id="ch5">
 	<div class="container">
 		<div class="section-title">
-			<h2 class="title" style="text-align: center;"> Our finding: Gender bias indeed exists! There is a long way to go towards gender equality!
+			<h2 class="title" style="text-align: center;">5.Our finding: Gender bias indeed exists! There is a long way to go towards gender equality!
 			</h2>
 		</div>
 		<div align=center>
