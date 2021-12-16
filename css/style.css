@@ -277,6 +277,10 @@ p img {
   margin: 0;
 }
 
+th,
+td {
+  text-align: center;
+}
 span {
   font-family: "Martel Sans";
 }
@@ -468,6 +472,9 @@ dd {
 /* Your Custom Typography. */
 .card{
   background: #568599;
+}
+.card .text{
+  margin: 0 20px;
 }
 .bg-with-black {
   position: relative;
