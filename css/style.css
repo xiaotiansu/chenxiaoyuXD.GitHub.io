@@ -614,6 +614,16 @@ header {
   padding: 5px 0;
   z-index: 999;
 }
+.card-row {
+  display: flex; /* equal height of the children */
+}
+
+.card-col {
+  flex: 1; /* additionally, equal width */
+  
+  /* padding: 1em; */
+  /* border: solid; */
+}
 
 .logo {
   padding: 14px 0;
