@@ -81,7 +81,7 @@ div#preloader {
 }
 
 header.navbar-fixed-top {
-  background: #000000;
+  background: #000000d3;
   -webkit-animation-duration: 0.8s;
           animation-duration: 0.8s;
   box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.75);
@@ -161,7 +161,7 @@ header.navbar-fixed-top {
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 71.5%;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -175,7 +175,7 @@ body {
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
-  margin:0 150px;
+  margin:0 220px;
 }
 
 img {
@@ -474,7 +474,8 @@ dd {
   background: #568599;
 }
 .card .text{
-  margin: 0 20px;
+  margin: 30px 30px;
+  font-style: oblique;
 }
 .bg-with-black {
   position: relative;
@@ -772,11 +773,11 @@ header {
 }
 
 .info-tab {
-  background: #313552;
+  background: #31355285;
 }
 
 .info-tab .nav {
-  background: #23273C;
+  background: #2128497a;
   border: 0;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
@@ -789,7 +790,7 @@ header {
       -ms-flex: auto;
           flex: auto;
   text-align: center;
-  border-right: 1px solid #383B55;
+  border-right: 1px solid #383b5586;
 }
 
 .info-tab .nav .nav-item .nav-link {
@@ -804,7 +805,7 @@ header {
 }
 
 .info-tab .nav .nav-item .nav-link.active {
-  color: #23273C;
+  color: #23273c54;
   background: #FFC576;
 }
 
@@ -1164,7 +1165,7 @@ header {
 
 .testimonial-carousel .owl-nav div {
   display: inline-block;
-  background: #2C304A;
+  background: #2c304a49;
   height: 44px;
   width: 44px;
   text-align: center;
