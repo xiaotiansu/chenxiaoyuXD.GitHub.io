@@ -643,6 +643,14 @@ header {
   padding: 20px;
 }
 
+.round_icon{
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
 .main-menu.stellarnav ul {
   text-align: right;
 }
