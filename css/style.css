@@ -644,11 +644,15 @@ header {
 }
 
 .round_icon{
+  height: 150px;;
+  width: 150px;;
+  margin-bottom: 30px;
   display: flex;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .main-menu.stellarnav ul {
