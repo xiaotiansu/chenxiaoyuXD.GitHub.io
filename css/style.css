@@ -55,6 +55,11 @@
   text-shadow: 2px 2px #000000;
 }
 
+.table-condensed{
+  font-size: 15px;
+  margin: 10px 40px;
+}
+
 ::selection {
   background: #ffffff;
   color: #FFC576;
